@@ -6,8 +6,10 @@ APEX (5.1+) Plugin build by using [jQuery UI Slider Pips](https://github.com/sim
 1.0.0 Initial Release
 
 ## Install
-- Import plugin file * .sql from *source* directory 
+- Import plugin file * item_type_plugin_hr_bilog_mgoricki_advanced_slider.sql from *source* directory 
 - (Optional) To optimize performance upload static files (CSS and JS) from *server* directory to Webserver and change File Prefix to point on server directory
+- (Optional) Compile package pck_advanced_plugin in DB schema (available to APEX parsing schema) and change parameter Render Procedure/Function Name
+to pck_advanced_plugin.p_render_item
 
 ## Settings
 - **Range** - choose between range and simple slider. If it's range slider, value is saved concatenated with colon, for example 10:15 where 10 is min value, and 15 is max value.
@@ -20,6 +22,10 @@ APEX (5.1+) Plugin build by using [jQuery UI Slider Pips](https://github.com/sim
 - **Pip Prefix** - (if Show Pips = Yes) - pip prefix 
 - **Pip Sufix** - (if Show Pips = Yes) - pip sufix
 - **Show Tooltip** - show tooltip (Yes) or labels inside slider (No)
+
+## Component Settings
+- **CSS Path** - path to CSS files. Complete path is concatenation of Plugin File Prefix itema and this property.
+- **JS Path** - path to JS files. Complete path is concatenation of Plugin File Prefix itema and this property.
 
 ## How to use
 -
