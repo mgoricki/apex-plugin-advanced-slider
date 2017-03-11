@@ -1,6 +1,6 @@
 # Oracle APEX Advanced Slider Plugin
 
-APEX (5.1+) Plugin build by using [jQuery UI Slider Pips](https://github.com/simeydotme/jQuery-ui-Slider-Pips) and [jQuery UI Slider Widget](http://api.jqueryui.com/slider/) creates advanced slider APEX item. 
+APEX (5.1+) Plugin build by using [jQuery UI Slider Pips](https://github.com/simeydotme/jQuery-ui-Slider-Pips) and [jQuery UI Slider Widget](http://api.jqueryui.com/slider/) that creates advanced slider APEX item. 
 
 ## Changelog
 1.0.0 Initial Release
