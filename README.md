@@ -29,5 +29,3 @@ to pck_advanced_plugin.p_render_item
 
 ## Demo
 - You can find demo on [apex.oracle.com](http://apex.oracle.com/pls/apex/f?p=apexbyg:advancedslider)
-
-## Preview
