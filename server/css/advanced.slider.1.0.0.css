@@ -1,0 +1,20 @@
+/* slider */
+.t-Region-body>.container{overflow:visible} /* because of slider width 100%*/
+.t-Form-inputContainer{overflow:visible} /* because of slider width 100%*/
+.slider_container{width:100%}
+.slider_container > div{margin:8px 0}
+.slider_container .ui-slider-handle{
+  background-color: #3C629B !important; 
+  width:auto !important;
+  min-width:1.6em !important;  
+  padding:0 2px;
+  height:1.6em !important; 
+  top:-0.5em !important;
+  color: #fff !important;
+  text-align: center;
+}
+.slider_container  .ui-slider{
+  position:relative; 
+  top:7px; 
+  border-color: #ccc; 
+}
