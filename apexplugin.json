@@ -13,8 +13,8 @@
     "name" : "Marko Goricki",
     "email" : "mgoricki8@gmail.com",
     "url" : "http://apexbyg.blogspot.com",
-    "twitter" : "mgoricki8",
-    "donationUrl" : "paypal.me/mgoricki"
+    "twitter" : "mgoricki",
+    "donationUrl" : "https://www.paypal.me/mgoricki"
   },
   "repository" : {
     "type" : "git",
