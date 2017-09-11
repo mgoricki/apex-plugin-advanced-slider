@@ -53,7 +53,8 @@
             // show label
             if(self.options.showTooltips!='Y'){
               $(ui.handle).html(ui.value);
-            }
+            };
+            self.item$.trigger('change');
           },
           stop: function(e,ui){
             debug.log(self.plugin, 'Slider Stop', e, ui);
