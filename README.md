@@ -4,6 +4,7 @@ APEX (5.1+) Plugin build by using [jQuery UI Slider Pips](https://github.com/sim
 
 ## Changelog
 1.0.1 20170911 Added On Change Event
+
 1.0.0 20170315 Initial Release
 
 ## Install
