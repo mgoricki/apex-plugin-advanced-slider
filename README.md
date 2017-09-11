@@ -3,7 +3,8 @@
 APEX (5.1+) Plugin build by using [jQuery UI Slider Pips](https://github.com/simeydotme/jQuery-ui-Slider-Pips) and [jQuery UI Slider Widget](http://api.jqueryui.com/slider/) that creates advanced slider APEX item. 
 
 ## Changelog
-1.0.0 Initial Release
+1.0.1 20170911 Added On Change Event
+1.0.0 20170315 Initial Release
 
 ## Install
 - Import plugin file *item_type_plugin_hr_bilog_mgoricki_advanced_slider.sql* from *source* directory 

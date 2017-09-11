@@ -169,7 +169,6 @@
      }
 
    });
-
  })(apex.debug, apex.item, apex.jQuery );
 
 //# sourceMappingURL=advanced.slider.1.0.0.js.map
