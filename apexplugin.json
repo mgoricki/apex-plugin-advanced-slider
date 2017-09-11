@@ -1,6 +1,6 @@
 {
   "name" : "Advanced Slider",
-  "version" : "1.0",
+  "version" : "1.0.1",
   "description" : "APEX Plugin build by using jQuery UI Slider Pips and jQuery UI Slider Widget that creates advanced slider APEX item.",
   "keywords" : ["slider", "item plugin"],
   "homepage" : "https://github.com/mgoricki/apex-plugin-advanced-slider",
