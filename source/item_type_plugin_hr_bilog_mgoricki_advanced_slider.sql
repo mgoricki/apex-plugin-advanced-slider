@@ -13,10 +13,10 @@ whenever sqlerror exit sql.sqlcode rollback
 begin
 wwv_flow_api.import_begin (
  p_version_yyyy_mm_dd=>'2016.08.24'
-,p_release=>'5.1.2.00.09'
-,p_default_workspace_id=>39910362628027568
-,p_default_application_id=>123
-,p_default_owner=>'PLUGINS'
+,p_release=>'5.1.1.00.08'
+,p_default_workspace_id=>2150321663285747
+,p_default_application_id=>146
+,p_default_owner=>'AUTPLIQ_DATA'
 );
 end;
 /
@@ -28,7 +28,7 @@ end;
 prompt --application/shared_components/plugins/item_type/hr_bilog_mgoricki_advanced_slider
 begin
 wwv_flow_api.create_plugin(
- p_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(6959424565373570389)
 ,p_plugin_type=>'ITEM TYPE'
 ,p_name=>'HR.BILOG.MGORICKI.ADVANCED_SLIDER'
 ,p_display_name=>'Advanced Slider'
@@ -139,34 +139,34 @@ wwv_flow_api.create_plugin(
 ,p_files_version=>84
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(5399021251161891)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(27533150752600986)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'APPLICATION'
 ,p_attribute_sequence=>1
 ,p_display_sequence=>10
 ,p_prompt=>'CSS URL'
 ,p_attribute_type=>'TEXT'
 ,p_is_required=>false
-,p_default_value=>'plugins/advanced_plugin/css/'
+,p_default_value=>'advanced_slider/css/'
 ,p_is_translatable=>false
 ,p_help_text=>'Path to CSS files'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(5404765940171644)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(27538895441610739)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'APPLICATION'
 ,p_attribute_sequence=>2
 ,p_display_sequence=>20
 ,p_prompt=>'JS URL'
 ,p_attribute_type=>'TEXT'
 ,p_is_required=>false
-,p_default_value=>'plugins/advanced_slider/js/'
+,p_default_value=>'advanced_slider/js/'
 ,p_is_translatable=>false
 ,p_help_text=>'Path to JS files'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(6946212740693277203)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(6968346870194716298)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>1
 ,p_display_sequence=>10
@@ -178,8 +178,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Choose between simple and range slider. If it''s range slider values of min and max values are separated with colon (:), for example 1:10.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(6946216268860409768)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(6968350398361848863)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>2
 ,p_display_sequence=>20
@@ -191,8 +191,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Minimal allowed value.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(6946216901927412018)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(6968351031428851113)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>3
 ,p_display_sequence=>30
@@ -204,8 +204,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Maximal allowed value.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(6927539264834049641)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(6949673394335488736)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>4
 ,p_display_sequence=>55
@@ -214,15 +214,15 @@ wwv_flow_api.create_plugin_attribute(
 ,p_is_required=>true
 ,p_default_value=>'1'
 ,p_is_translatable=>false
-,p_depending_on_attribute_id=>wwv_flow_api.id(6946228435685251417)
+,p_depending_on_attribute_id=>wwv_flow_api.id(6968362565186690512)
 ,p_depending_on_has_to_exist=>true
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'Y'
 ,p_help_text=>'Define pip steps. Only visually, not like slider steps.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(6946228435685251417)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(6968362565186690512)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>5
 ,p_display_sequence=>50
@@ -234,8 +234,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Show pip line below.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(6946230004019252472)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(6968364133520691567)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>6
 ,p_display_sequence=>60
@@ -247,8 +247,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'It this option is on, there''s no label inside of a slider.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(6927530843447006179)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(6949664972948445274)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>7
 ,p_display_sequence=>35
@@ -260,8 +260,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Steps of slider.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(6927543274913073523)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(6949677404414512618)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>8
 ,p_display_sequence=>57
@@ -269,15 +269,15 @@ wwv_flow_api.create_plugin_attribute(
 ,p_attribute_type=>'TEXT'
 ,p_is_required=>false
 ,p_is_translatable=>false
-,p_depending_on_attribute_id=>wwv_flow_api.id(6946228435685251417)
+,p_depending_on_attribute_id=>wwv_flow_api.id(6968362565186690512)
 ,p_depending_on_has_to_exist=>true
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'Y'
 ,p_help_text=>'Prefix of a pip.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(6927546899135075837)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(6949681028636514932)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>9
 ,p_display_sequence=>59
@@ -285,15 +285,15 @@ wwv_flow_api.create_plugin_attribute(
 ,p_attribute_type=>'TEXT'
 ,p_is_required=>false
 ,p_is_translatable=>false
-,p_depending_on_attribute_id=>wwv_flow_api.id(6946228435685251417)
+,p_depending_on_attribute_id=>wwv_flow_api.id(6968362565186690512)
 ,p_depending_on_has_to_exist=>true
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'Y'
 ,p_help_text=>'Sufix of a pip.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(6927599992635228135)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(6949734122136667230)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>10
 ,p_display_sequence=>15
@@ -301,7 +301,7 @@ wwv_flow_api.create_plugin_attribute(
 ,p_attribute_type=>'COLOR'
 ,p_is_required=>false
 ,p_is_translatable=>false
-,p_depending_on_attribute_id=>wwv_flow_api.id(6946212740693277203)
+,p_depending_on_attribute_id=>wwv_flow_api.id(6968346870194716298)
 ,p_depending_on_has_to_exist=>true
 ,p_depending_on_condition_type=>'EQUALS'
 ,p_depending_on_expression=>'Y'
@@ -323,8 +323,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(5436996501254866)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(27571126002693961)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_file_name=>'advanced_slider/css/advanced.slider.1.0.0.css'
 ,p_mime_type=>'text/css'
 ,p_file_charset=>'utf-8'
@@ -581,8 +581,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(5437640298254871)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(27571769799693966)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_file_name=>'advanced_slider/css/jquery-ui-1.10.4.slider.min.css'
 ,p_mime_type=>'text/css'
 ,p_file_charset=>'utf-8'
@@ -686,8 +686,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(5438444815254877)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(27572574316693972)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_file_name=>'advanced_slider/css/jquery-ui-slider-pips.css'
 ,p_mime_type=>'text/css'
 ,p_file_charset=>'utf-8'
@@ -750,8 +750,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(5439281074254884)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(27573410575693979)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_file_name=>'advanced_slider/js/advanced.slider.1.0.0.js'
 ,p_mime_type=>'application/javascript'
 ,p_file_charset=>'utf-8'
@@ -790,8 +790,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(5440081758254892)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(27574211259693987)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_file_name=>'advanced_slider/js/advanced.slider.1.0.0.min.js'
 ,p_mime_type=>'application/javascript'
 ,p_file_charset=>'utf-8'
@@ -2453,8 +2453,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(5440817811254899)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(27574947312693994)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_file_name=>'advanced_slider/js/jquery-ui-1.10.4.slider.min.js'
 ,p_mime_type=>'application/x-javascript'
 ,p_file_charset=>'utf-8'
@@ -2710,8 +2710,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(5441634005254909)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(27575763506694004)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_file_name=>'advanced_slider/js/jquery-ui-slider-pips.js'
 ,p_mime_type=>'application/x-javascript'
 ,p_file_charset=>'utf-8'
@@ -2793,8 +2793,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(5442436206254918)
-,p_plugin_id=>wwv_flow_api.id(6937290435872131294)
+ p_id=>wwv_flow_api.id(27576565707694013)
+,p_plugin_id=>wwv_flow_api.id(6959424565373570389)
 ,p_file_name=>'advanced_slider/js/jquery-ui-slider-pips.min.js'
 ,p_mime_type=>'application/x-javascript'
 ,p_file_charset=>'utf-8'
