@@ -52,7 +52,7 @@
     end if;
     
     -- add JS
-    apex_javascript.add_library (p_name => 'jquery-ui-1.10.4.slider.min.js?v='||v_file_version
+    apex_javascript.add_library (p_name => 'jquery-ui-1.12.1.slider.min.js?v='||v_file_version
                                , p_directory => v_js_path
                                , p_skip_extension => true);
                                
