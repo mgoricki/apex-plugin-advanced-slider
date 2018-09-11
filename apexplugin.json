@@ -1,6 +1,6 @@
 {
   "name" : "Advanced Slider",
-  "version" : "1.0.2",
+  "version" : "1.0.3",
   "description" : "APEX Plugin build by using jQuery UI Slider Pips and jQuery UI Slider Widget that creates advanced slider APEX item.",
   "keywords" : ["slider", "item plugin"],
   "homepage" : "https://github.com/mgoricki/apex-plugin-advanced-slider",
@@ -23,7 +23,7 @@
   "oracle" : {
     "versions" : ["11.2.0.1", "12.1.0.1"],
     "apex" : {
-      "versions" : ["5.1.0.00.45"],
+      "versions" : ["5.1.0.00.45", "18.1.0.00.45"],
       "plugin" : {
         "internalName" : "HR.BILOG.MGORICKI.ADVANCED_SLIDER",
         "type" : "item",
