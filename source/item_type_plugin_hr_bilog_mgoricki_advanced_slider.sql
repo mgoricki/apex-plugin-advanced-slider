@@ -131,8 +131,8 @@ wwv_flow_api.create_plugin(
 ,p_subscribe_plugin_settings=>true
 ,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
 'v1.0.1 Added triggering on change DA event',
-'v1.0.2 New version of APEX UI slider (1.12.1) - fixes modal close icon'))
-,p_version_identifier=>'1.0.2'
+'v1.0.3 New version of APEX UI slider (1.12.1) - fixes modal close icon'))
+,p_version_identifier=>'1.0.3'
 ,p_about_url=>'https://apex.oracle.com/pls/apex/f?p=apexbyg:advancedslider'
 ,p_files_version=>86
 );

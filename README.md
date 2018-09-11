@@ -4,6 +4,8 @@ APEX (5.1+) Plugin build by using [jQuery UI Slider Pips](https://github.com/sim
 
 ## Changelog
 
+1.0.3 20180911 New version of jQuery UI 1.12.1 - fixes modal dialog close icon
+
 1.0.2 20170911 Changed default value for component settings (static file path)
 
 1.0.1 20170911 Added On Change Event
