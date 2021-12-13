@@ -4,7 +4,7 @@
 .slider_container{width:100%}
 .slider_container > div{margin:8px 0}
 .slider_container .ui-slider-handle{
-  background-color: #3C629B !important; 
+  background-color: #4b8844 !important; 
   width:auto !important;
   min-width:1.6em !important;  
   padding:0 2px;
